@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="icon" href="images\transparent logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" /> <!--Linku per ikona-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap">
+   <title>Resort Naye</title>
+  </head>
+  <style>
+      .container {
+        height: 100vh;
+      }
+      .container img {
+        width: 100%;
+        position: relative;
+        z-index: -1;
+      }
+      .main-title {
+        position: absolute;
+        color:#ffa100;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 1.5);
+        top: 85%;
+        left: 50%;
+        font-size:50px;
+        transform: translate(-50%, -50%);
+      }
+      .content {
+        width: 100%;
+        background: white;
+        z-index: 2;
+        position: absolute;
+      }
+
+      p{
+        text-align: left;
+      }
+  </style>
+  <body>
+    <header>
+            <div class="logo">
+                <a href="home.html"><img src="images\logo2.jpg"/></a>
+            </div>
+            <nav>
+              <ul>
+                <li class="dropdown" >
+                  <a href="sherbimet.html" class="dropbtn"><b>Shërbimet</b></a>
+                  <div class="dropdown-content">
+                    <a href="sherbimet.html">Naye Nature Noshery</a>
+                    <a href="sherbimet.html">CloudNine Retreat</a>
+                  </div>
+                </li>
+                <li class="dropdown">
+                  <a href="aktivitetet.html" class="dropbtn"><b>Aktivitetet</b></a>
+
+                  <div class="dropdown-content">
+                    <a href="aktivitetet.html#zipline-section">Zipline</a>
+                    <a href="aktivitetet.html#swing-section">Swing</a>
+                    <a href="aktivitetet.html#hiking-section">Hiking</a>
+                    <a href="aktivitetet.html#mountain-biking-section">Mountain Biking</a>
+                    <a href="aktivitetet.html#free-fall-section">Free Fall</a>
+                    <a href="aktivitetet.html#horse-riking-section">Horse Riding</a>
+                  </div>
+                </li>
+
+                <li>
+                  <a href="rezervoni.html" class="dropbtn"><b>Rezervoni</b></a>
+                </li>
+
+                <li class="dropdown">
+                  <a href="rrethnesh.html" class="dropbtn"><b>Rreth Nesh</b></a>
+                  <div class="dropdown-content">
+                    <a href="rrethnesh.html">Kompania jonë</a>
+                    <a href="vendndodhja.html">Vendndodhja</a>
+                    <a href="faq.html">FAQ</a>
+                    <a href="validation_css_Detyra2.html">Kontroll CSS-Validation</a>
+                </div>
+                </li>
+                <li class="dropdown">
+                  <div class="search-bar">
+                     <input type="search" id="searchInput" name="searchInput" placeholder="Search..." onkeydown="searchOnEnter(event)">
+                     <span class="material-symbols-outlined">search</span>
+                   </div>
+                </li>
+              </ul>
+            </nav>
+      </header>
+
+      <script>
+        // JavaScript function to handle search on Enter key press
+        function searchOnEnter(event) {
+          if (event.key === "Enter") {
+            // Perform your search action here
+            alert("Searching for: " + document.getElementById("searchInput").value);
+          }
+        }
+      </script>
+      <main>
+        <section style="padding: 0px;">
+        <div class="container">
+          <p class="main-title" ><b>Safety & Sustainability </b></p>
+          <img src="images\hochseilgartenkaltenbach_outdoorcenter-zillertal6144.jpg" class="bg1" alt="" />
+        </div>
+
+        <div class="content"> <br>
+              <p style="font-size:35px; text-align: center; "><b>Security</b></p>
+              <section class="wrapper" style="padding-top:10px;">
+                <div class="wrapper-items" style = "width: 45%">
+                  <p style=" text-align: center; "><span class="material-symbols-outlined" >security</span></p>
+                  <h2>SIGURIA E PARA!</h2><br>
+                  <p>Screaming Eagle Zip Line Canopy Tours në malin Naye është një nga turnetë me zip line më të vizituar në rajon. Ne jemi vazhdimisht në kërkim të një experience sa më të sigurt për secilin prej pjesëmarrësve tanë. Me Sistemin tonë të Mbyllur Belay në secilin prej kurseve tona (nga fillimi deri në fund), ju nuk shkëputeni kurrë! Të jeni të bindur se siguria është gjithmonë e para për ne. Ne i marrim seriozisht standardet tona të sigurisë, në mënyrë që të mund të keni një përvojë të mahnitshme gjatë xhiros me zinxhir në parkun tonë! Mijëra aventurierë kanë pasur përvoja të paharrueshme dhe argëtuese me ne, që nga vitin 1999. Të gjitha linjat tona zip, kullat dhe pjesët e tjera të udhëtimit aventureske janë projektuar dhe ndërtuar nga American Adventure Park Systems, ekipi i mirëmbajtjes dhe ndërtimit të Naye Adventure Park!</p><br><img src="images\Falcon-4-1024x768.jpg" width="500px"/>
+
+                </div>
+                <div class="wrapper-items" style = "width: 45%">
+                  <p style=" text-align: center; "><span class="material-symbols-outlined">verified_user</span></p>
+                  <h2>EKSPERTIZA USHTARAKE!</h2><br>
+                  <p>Screaming Eagle Adventures në Naye Adventure Park është një nga kurset e PARË të aventurës me zip line të instaluar profesionalisht në Shtetet e Bashkuara. Pronari/Operatori dhe ish Operacionet Speciale/SH.B.A. Army Ranger, Aviator, Mike Holder, ndihmuan në projektimin dhe ndërtimin e ziplines për trajnimin e alpinizmit dhe qëllimet e demonstrimit luftarak në Ft. Benning, GA, si dhe në mbarë botën. Ekspertiza ushtarake e Majk dhe ajo e linjës zip kanë ndihmuar në suksesin e Screaming Eagle Adventures në Naye Adventure Park. Të gjitha kurset tona, si dhe të tjerat që ndërtojmë, janë projektuar, ndërtuar, instaluar, inspektuar dhe mirëmbajtur në mënyrë profesionale.</p> <br><br><br><br><img src="images\Zip-Liner-22_Level-1.jpg" width="500px"/>
+                </div>
+              </section>
+
+              <section class="wrapper" >
+                <div class="wrapper-items" style = "width: 45%">
+                  <h2>CERTIFIKIME DHE SHOQATA</h2> <br>
+                  <p>American Adventure Park System është një Anëtar i akredituar i Shitësit Profesionist (PVM) i ACCT në Industrinë e Dizajnimit, Ndërtimit, Trajnimit dhe Furnizimit të Parkut të Aventurës. Ne i përmbahemi ose i tejkalojmë standardet dhe inspektimet rigoroze të sigurisë (ANSI & ASTM) të kësaj organizate. Shitësit profesionistë të jashtëm ofrojnë inspektim vjetor dhe përditësime për certifikim, d.m.th. pajisjet, trajnimet dhe kursi ynë. Përveç kësaj, ne kryejmë dhe dokumentojmë inspektimet tona ditore të sistemit dhe pajisjeve në përdorim. Ne kontrollojmë për konsumim, shërbim dhe probleme të tjera të mundshme të sigurisë</p>
+                  <br><br>
+                  <img src="images\certified3.png" width="40%"/>
+                </div>
+                <div class="wrapper-items" style = "width: 45%">
+                  <img src="images\certified.jpg" width="100%"/>
+                  ACCT – Association of Challenge Course Technology is the world’s leading and largest trade organization an sets the standard for developing and running challenge courses and zip line canopy tour programs. For more please visit <a href="https://www.myswitzerland.com/en-ch/planning/about-switzerland/sustainability/" style="color:green;"> www.acctinfo.org </a>
+                  <br><img src="images\certified2.png" width="30%"/>
+                </div>
+              </section>
+              <br>
+              <p style="font-size:35px; text-align: center;"><b>SUSTAINABILITY</b></p>
+
+              <section style="padding-right: 90px; padding-left:90px;">
+                <div class="photo-container">
+                  <div class="photo">
+                    <img src="images\as4i9763-dji-0339_detail.jpg" alt="Photo 1">
+                    <div class="description">
+                      <p style="font-weight:500; font-size: 30px;"><i>Certifikata EnAW Mbrojtja Vullnetare e Klimës</i></p><br>
+                      <p>Me deklaratën vullnetare të anëtarësimit në EnAW (Agjencia e Energjisë e Ekonomisë), Resorti Naye mbështet në mënyrë aktive reduktimin e emetimeve të CO2 dhe optimizimin e efikasitetit të energjisë.</p>
+                    </div>
+                  </div>
+                <div class="photo">
+                    <img src="images\as4i9344_detail.jpg" alt="Photo 2">
+                    <div class="description">
+                      <p style="font-weight:500; font-size: 30px;"><i>Certifikata Eurofins</i></p><br>
+                      <p>Resorti Naye i nënshtrohet një kontrolli të rregullt laboratorik vullnetar në lidhje me higjienën, si pjesë e programit të kontrollit të brendshëm dhe të sigurimit të cilësisë.</p>
+                    </div>
+                </div>
+                <div class="photo">
+                    <img src="images\swisstainable.jpg" alt="Photo 3">
+                    <div class="description">
+                      <p style="font-weight:500; font-size: 30px;"><i>Swisstainable</i></p><br>
+                      <p>Natyra na prek kur e lëmë të paprekur. Zvicra si destinacion udhëtimi njihet për male larta, gryka të egra, pyje mistike; natyra jonë ka fuqinë të japë energji. Ne duam ta ruajmë këtë - për shumë breza që do të vijnë.</p>
+                    </div>
+                </div>
+                </div>
+            </section>
+            <section style="padding-right: 90px; padding-left:90px;">
+              <div class="photo-container">
+                <div class="photo">
+                  <img src="images\laundry.jpg" alt="Photo 1">
+                  <div class="description">
+                    <p style="font-weight:500; font-size: 30px;"><i>Lavanderi</i></p><br>
+                    <p>Mysafirët tanë mund të na ndihmojnë për të mbrojtur mjedisin. Rrobat dhe peshqirët në dhoma ndërrohen vetëm sipas kërkesës. Vetëm peshqirët në dush ose vaskë ndërrohen cdo ditë.</p>
+                  </div>
+                </div>
+                <div class="photo">
+                  <img src="images\doublecleaning.jpg" alt="Photo 2">
+                  <div class="description">
+                    <p style="font-weight:500; font-size: 30px;"><i>Pastrim i dyfishtë</i></p><br>
+                    <p>Locionët pastrues dhe detergjentët jo të biodegradueshëm përfundojnë në natyrë nëpërmjet kanalizimit dhe ndotin florën dhe faunën. Duke kaluar te pastruesit organikë, ne po ndihmojmë në uljen e ndotjes. Paketimi i shumicës së pastruesve organikë është i riciklueshëm, gjë që redukton ngarkesën e mbetjeve.</p>
+                  </div>
+                </div>
+                <div class="photo">
+                  <img src="images\switchoff.jpg" alt="Photo 3">
+                  <div class="description">
+                    <p style="font-weight:500; font-size: 30px;"><i>Energjia elektrike</i></p><br>
+                    <p>Ne po optimizojmë vazhdimisht konsumin tonë të energjisë elektrike dhe po investojmë në pajisje dhe makineri që fiken automatikisht, kur nuk janë përdorur për një kohë të caktuar. E gjithë energjia elektrike në dhomat tona vjen nga burime të rinovueshme të energjisë, psh energjia diellore, hidro dhe era.</p>
+                  </div>
+                </div>
+              </div>
+          </section>
+          <footer>
+            <div class="footer-content">
+                <img src="images\footer.png" class="footer-image">
+                <div class="footer-list">
+                      <ul>
+                          <li><a href="vendndodhja.html">GETTING HERE</a></li>
+                          <li><a href="home.html">TICKETS & OPENING TIMES</a></li>
+                          <li><a href="aktivitetet.html">WHAT TO DO AT DAJTI MOUNTAIN</a></li>
+                          <li><a href="faq.html">FAQ’S</a></li>
+                      </ul>
+                      <ul>
+                          <li><a href="rezervoni.html">RESERVATION</a></li>
+                          <li><a href="rrethnesh.html">ABOUT US</a></li>
+                          <li><a href="rrethnesh.html">BLOG</a></li>
+
+                      </ul>
+                      <ul>
+                          <li>LINKEDIN</li>
+                          <li>FACEBOOK</li>
+                          <li>INSTAGRAM</li>
+                          <li>YOUTUBE</li>
+                      </ul>
+                      <ul>
+
+                          <li><a href="sherbimet.html">TRIPADVISOR</a></li>
+                          <li><a href="rrethnesh.html">INFO</a></li>
+                          <li>MARKETING</li>
+                      </ul>
+                      <ul>
+                          <li>(+355) 67 40 11 035</li>
+                          <li>WHATSAPP</li>
+                          <li>MESSENGER</li>
+                      </ul>
+                  </div>
+              </div>
+              <p align="center">&copy; 2023 Resort Naye. All rights reserved.</p>
+          </footer>
+        </main>
+
+
+      </div>
+
+        <script
+          src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"
+          integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ=="
+          crossorigin="anonymous"
+        ></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/animation.gsap.js"></script>
+        <script>
+          let controller = new ScrollMagic.Controller();
+          let timeline = new TimelineMax();
+
+          timeline
+            .to(".rock", 10, { y: -300 })
+            .to(".girl", 10, { y: -200 }, "-=10")
+            .fromTo(".bg1", { y: -50 }, { y: 0, duration: 10 }, "-=10")
+            .to(".content", 10, { top: "0%" }, "-=10")
+            .fromTo(".content-images", { opacity: 0 }, { opacity: 1, duration: 3 })
+            .fromTo(".text", { opacity: 0 }, { opacity: 1, duration: 3 });
+
+          let scene = new ScrollMagic.Scene({
+            triggerElement: "section",
+            duration: "300%",
+            triggerHook: 0,
+          })
+            .setTween(timeline)
+            .setPin("section")
+            .addTo(controller);
+
+        </script>
+
+  </body>
+</html>

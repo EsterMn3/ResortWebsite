@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="icon" href="images\transparent logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" /> <!--Linku per ikona-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap">
+   <title>Resort Naye</title>
+  </head>
+  <style>
+      .faq-container {
+          max-width: 600px;
+          margin: 20px auto;
+      }
+
+      .faq-item {
+          border-bottom: 1px solid #ccc;
+          margin-bottom: 15px;
+          padding-bottom: 15px;
+      }
+
+      .question {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          cursor: pointer;
+      }
+
+      .answer {
+          display: none;
+          padding-top: 10px;
+      }
+
+      .toggle-answer {
+          background-color: #4A0404;
+          color: white;
+          border: none;
+          padding: 5px 10px;
+          border-radius: 3px;
+          cursor: pointer;
+      }
+      .backgroundimg-text {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #D3D3D3;
+        text-align: center;
+        font-size: 30px;
+        font-weight: bold;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+        z-index: 1;
+      }
+
+  </style>
+  <body>
+    <header>
+
+            <div class="logo">
+                <a href="home.html"><img src="images\logo2.jpg"/></a>
+            </div>
+            <nav>
+              <ul>
+                <li class="dropdown" >
+                  <a href="sherbimet.html" class="dropbtn"><b>Shërbimet</b></a>
+                  <div class="dropdown-content">
+                    <a href="sherbimet.html">Naye Nature Noshery</a>
+                    <a href="sherbimet.html">CloudNine Retreat</a>
+                  </div>
+                </li>
+                <li class="dropdown">
+                  <a href="aktivitetet.html" class="dropbtn"><b>Aktivitetet</b></a>
+
+                  <div class="dropdown-content">
+                    <a href="aktivitetet.html#zipline-section">Zipline</a>
+                    <a href="aktivitetet.html#swing-section">Swing</a>
+                    <a href="aktivitetet.html#hiking-section">Hiking</a>
+                    <a href="aktivitetet.html#mountain-biking-section">Mountain Biking</a>
+                    <a href="aktivitetet.html#free-fall-section">Free Fall</a>
+                    <a href="aktivitetet.html#horse-riking-section">Horse Riding</a>
+                  </div>
+                </li>
+
+                <li>
+                  <a href="rezervoni.html" class="dropbtn"><b>Rezervoni</b></a>
+                </li>
+
+                <li class="dropdown">
+                  <a href="rrethnesh.html" class="dropbtn"><b>Rreth Nesh</b></a>
+                  <div class="dropdown-content">
+                    <a href="rrethnesh.html">Kompania jonë</a>
+                    <a href="vendndodhja.html">Vendndodhja</a>
+                    <a href="faq.html">FAQ</a>
+                    <a href="validation_css_Detyra2.html">Kontroll CSS-Validation</a>
+                </div>
+                </li>
+                <li class="dropdown">
+                  <div class="search-bar">
+                     <input type="search" id="searchInput" name="searchInput" placeholder="Search..." onkeydown="searchOnEnter(event)">
+                     <span class="material-symbols-outlined">search</span>
+                   </div>
+                </li>
+              </ul>
+            </nav>
+      </header>
+
+
+      <script>
+        // JavaScript function to handle search on Enter key press
+        function searchOnEnter(event) {
+          if (event.key === "Enter") {
+            alert("Searching for: " + document.getElementById("searchInput").value);
+          }
+        }
+      </script>
+
+      <main>
+        <div class="background-image">
+            <div class="backgroundimg-text">
+                <p>Frequently Asked Questions</p>
+            </div>
+            <img src="images\faq.png" alt="Resort Image" style="width: 100%; height: 100%;">
+        </div>
+        <br><br>
+        <h1 align="center">NAYE ADVENTURE PARK PYETJE/PERGJIGJE</h1>
+        <br>
+        <div class="faq-container">
+          <!-- Pyetja 1 -->
+          <div class="faq-item">
+            <div class="question">
+              <h3>A ka një kufi për madhësinë ose peshën për zipline?</h3>
+              <button class="toggle-answer">+</button>
+            </div>
+            <div class="answer">
+              <p>Ka shumë për të bërë në park për aventurierët e të gjitha moshave, por shtigjet e qiellit (ziplines) kanë kërkesa minimale dhe maksimale. Pesha maksimale për të gjitha shtigjet qiellore është 265 lbs, dhe pesha minimale është 45 lbs. Nëse mund të arrini të paktën 66 inç lartësi me krahët e shtrirë mbi kokë, mund të lini me zipline në mënyrë të pavarur në kursin tonë Go Fly. Nëse nuk mund të arrini 66 inç, por mund të arrini të paktën 58 inç, zakonisht mund të merrni pjesë me ndihmën e anëtarëve të tjerë në grupin tuaj, ose mund të punësoni një nga udhëzuesit tanë të mrekullueshëm privatë (me njoftim paraprak) nëse nuk e bëni këtë. nuk kam njeri për të ndihmuar. Mos ngurroni të na telefononi dhe ne jemi të lumtur t'ju shpjegojmë këtë dhe kërkesat për shtigjet tona të tjera qiellore!</p>
+            </div>
+          </div>
+
+
+          <div class="faq-item">
+            <div class="question">
+              <h3>A ka një kufi moshe?</h3>
+              <button class="toggle-answer">+</button>
+            </div>
+            <div class="answer">
+              <p>Mosha minimale për të marrë pjesë në Skytrails është 6 vjeç, por ka shumë aktivitete të tjera për aventurierët më të rinj. Për Skytrails (ziplines), zakonisht varet nga pesha/madhësia më shumë se mosha. Shihni "A ka një kufi për madhësinë ose peshën për zipline?" Seksioni FAQ.</p>
+            </div>
+          </div>
+
+          <!-- Pyetja 3 -->
+          <div class="faq-item">
+            <div class="question">
+              <h3>Disa në familjen tonë nuk po ziplin - si t'ia dalim? A duhet të blej një leje për terren edhe nëse nuk jam duke bërë asnjë nga aktivitetet?</h3>
+              <button class="toggle-answer">+</button>
+            </div>
+            <div class="answer">
+              <p>Për të gjithë anëtarët pa zip në një grup, kërkohet një leje leje (Go-Play). Të ardhurat nga kjo leje lejojnë të paguhen për lehtësitë në të cilat kanë akses të ftuarit tanë pa zinxhir, të tilla si banjat, shtigjet për ecje, shëtitoret, zonat e tavolinave/ulëses dhe mirëmbajtja e përgjithshme e terrenit. Ka shumë punë në prapaskenë për ta mbajtur pyllin tonë të bukur dhe të arritshëm për të gjithë - shpresojmë që t'ju pëlqejë!</p>
+              <p>Go Play përfshihet automatikisht për të gjitha lejet e Zipline Skytrail dhe nuk ka nevojë të blihet veçmas. Klikoni për të parë se cilat aktivitete përfshihen në Go Play.</p>
+              <p>Për të gjitha aktivitetet e Geronimo, Kliko për të parë çmimin dhe çfarë përfshihet.</p>
+              <p>Nëse grupi juaj është gjashtë ose më shumë, mund të mendoni të planifikoni një festë në grup.</p>
+            </div>
+          </div>
+
+          <!-- Pyetja 4 -->
+          <div class="faq-item">
+            <div class="question">
+              <h3>A ofroni zbritje per ushtaraket?</h3>
+              <button class="toggle-answer">+</button>
+            </div>
+            <div class="answer">
+              <p>Po, ne ofrojmë 10% zbritje ushtarake. Futni kodin "MILITARY" në arkë dhe ju lutemi sillni një ID të vlefshme ushtarake ose DD214 kur të vini për aventurën tuaj.</p>
+            </div>
+          </div>
+
+          <!-- Pyetja 5 -->
+          <div class="faq-item">
+            <div class="question">
+              <h3>Nëse blej vetëm një ose dy kurse zipline, a mund të zgjedh cilat të bëj?</h3>
+              <button class="toggle-answer">+</button>
+            </div>
+            <div class="answer">
+              <p>Kursi juaj i parë zipline duhet të jetë Go Fly, përveç nëse e keni përfunduar Go Fly brenda 90 ditëve të fundit. Nëse blini një kurs të dytë zipline, mund të zgjidhni midis Go High ose Go Long, ose mund të bëni përsëri Go Fly!</p>
+            </div>
+          </div>
+
+          <!-- Pyetja 6 -->
+          <div class="faq-item">
+            <div class="question">
+              <h3>A duhet të kem një ID me vete?</h3>
+              <button class="toggle-answer">+</button>
+            </div>
+            <div class="answer">
+              <p>Po, një ID e vlefshme e lëshuar nga qeveria duhet të paraqitet gjatë regjistrimit për të vërtetuar blerjen.</p>
+            </div>
+          </div>
+
+          <!-- Pyetja 7 -->
+          <div class="faq-item">
+            <div class="question">
+              <h3>Cila është politika juaj e rimbursimit dhe anulimit?</h3>
+              <button class="toggle-answer">+</button>
+            </div>
+            <div class="answer">
+              <p>Ne jemi të lumtur të riplanifikojmë rezervimin tuaj me njoftim paraprak. Ne planifikojmë dhe planifikojmë stafin bazuar në rezervimet, ndaj ju lutemi ju lutemi të na njoftoni sa më shpejt që të jetë e mundur në mënyrë që të ofrojmë shërbimin më të mirë për mysafirët e tjerë.</p>
+              <p>Nëse kërkohet një rimbursim për grupet nën 6 pjesëmarrës, rezervimi duhet të anulohet të paktën 72 orë përpara.</p>
+              <p>Grupet më të mëdha kërkojnë anulim të paktën një javë përpara për një rimbursim.</p>
+              <p>Nëse moti e pengon aktivitetin ditën e ngjarjes, ne do të punojmë me ju për ta riplanifikuar. Nëse nuk jeni në gjendje të riplanifikoni, atëherë ne do të shqyrtojmë një rimbursim në varësi të rrethanave. Një shembull i zakonshëm është një grup mysafirësh që fluturojnë për në Hjuston nga jashtë qytetit dhe bëjnë një rezervim për të ardhur të na shohin. Në këtë rast, ne jemi të lumtur të lëshojmë një rimbursim të plotë nëse moti ose orari i tyre nuk lejon riplanifikim përpara se të nisemi në shtëpi.</p>
+            </div>
+          </div>
+
+          <!-- Pyetja 8 -->
+          <div class="faq-item">
+            <div class="question">
+              <h3>Si ndikon moti në aktivitetet e parkut?</h3>
+              <button class="toggle-answer">+</button>
+            </div>
+            <div class="answer">
+              <p>Ne jemi të hapur shi ose shkëlqejmë! Zhvendosja me zinxhir në shi mund të jetë argëtuese - sillni një xhaketë shiu! Shumica mund të vishen me parzmoret tona. Për klimën tipike të Hjustonit, zakonisht moti i vetëm që na kërkon të shtyjmë aktivitetet e parkut është rrufeja. Herë pas here, shiu i fortë i vazhdueshëm dhe më rrallë era e fortë (30+ mph) mund të na kërkojë gjithashtu të pezullojmë aktivitetet derisa të përmirësohen kushtet. Moti monitorohet vazhdimisht nga stafi ynë, kështu që ju lutemi na telefononi nëse nuk jeni të sigurt për motin. Zona më e madhe e Hjustonit është e gjerë dhe shpesh një zonë e qytetit po laget ndërsa tjetra është nën rrezet e diellit të plotë!</p>
+            </div>
+          </div>
+
+          <!-- Pyetja 9 -->
+          <div class="faq-item">
+            <div class="question">
+              <h3>A keni dollapë për të ruajtur sende me vlerë?</h3>
+              <button class="toggle-answer">+</button>
+            </div>
+            <div class="answer">
+              <p>Po, ne marrim me qira dollapë për të ruajtur telefona, bizhuteri, kuleta dhe sende të tjera me vlerë. Ne ju rekomandojmë shumë të merrni me qira një dollap me kyç nëse i merrni me vete këto sende. Ne nuk jemi përgjegjës për dëmtimin ose humbjen e sendeve të mbetura në automjet ose në ambiente.</p>
+            </div>
+          </div>
+
+        </div>
+            <script src="JS\script.js"></script>
+    </main>
+    <footer>
+      <div class="footer-content">
+          <img src="images\footer.png" class="footer-image">
+          <div class="footer-list">
+                <ul>
+                    <li><a href="vendndodhja.html">GETTING HERE</a></li>
+                    <li><a href="home.html">TICKETS & OPENING TIMES</a></li>
+                    <li><a href="aktivitetet.html">WHAT TO DO AT DAJTI MOUNTAIN</a></li>
+                    <li><a href="faq.html">FAQ’S</a></li>
+                </ul>
+                <ul>
+                    <li><a href="rezervoni.html">RESERVATION</a></li>
+                    <li><a href="rrethnesh.html">ABOUT US</a></li>
+                    <li><a href="rrethnesh.html">BLOG</a></li>
+
+                </ul>
+                <ul>
+                    <li>LINKEDIN</li>
+                    <li>FACEBOOK</li>
+                    <li>INSTAGRAM</li>
+                    <li>YOUTUBE</li>
+                </ul>
+                <ul>
+
+                    <li><a href="sherbimet.html">TRIPADVISOR</a></li>
+                    <li><a href="rrethnesh.html">INFO</a></li>
+                    <li>MARKETING</li>
+                </ul>
+                <ul>
+                    <li>(+355) 67 40 11 035</li>
+                    <li>WHATSAPP</li>
+                    <li>MESSENGER</li>
+                </ul>
+            </div>
+
+        </div>
+        <p align="center">&copy; 2023 Resort Naye. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

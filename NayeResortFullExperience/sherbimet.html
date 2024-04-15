@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="icon" href="images\transparent logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" /> <!--Linku per ikona-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap">
+   <title>Resort Naye</title>
+
+  </head>
+  <style>
+    form {
+      max-width: 800px;
+      margin: 20px auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    label {
+      display: block;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      margin-bottom: 10px;
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+     }
+
+    .room-container {
+      border: 1px solid #ccc;
+      padding: 15px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+     }
+
+    .meal-options, .room-type-options {
+      display: flex;
+      align-items: center;
+      margin-top: 10px;
+    }
+
+    .meal-options label, .room-type-options label {
+      margin-right: 10px;
+      font-weight: normal;
+    }
+
+    .room-type-options input {
+      margin-top: 0;
+    }
+
+    button {
+      align-self: flex-end;
+      width: 100%;
+      background-color: #4A0404;
+      color: white;
+      padding: 12px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+
+  </style>
+  <body>
+    <header>
+            <div class="logo">
+                <a href="home.html"><img src="images\logo2.jpg"/></a>
+            </div>
+            <nav>
+              <ul>
+                <li class="dropdown" >
+                  <a href="sherbimet.html" class="dropbtn"><b>Shërbimet</b></a>
+                  <div class="dropdown-content">
+                    <a href="sherbimet.html">Naye Nature Noshery</a>
+                    <a href="sherbimet.html">CloudNine Retreat</a>
+                  </div>
+                </li>
+                <li class="dropdown">
+                  <a href="aktivitetet.html" class="dropbtn"><b>Aktivitetet</b></a>
+
+                  <div class="dropdown-content">
+                    <a href="aktivitetet.html#zipline-section">Zipline</a>
+                    <a href="aktivitetet.html#swing-section">Swing</a>
+                    <a href="aktivitetet.html#hiking-section">Hiking</a>
+                    <a href="aktivitetet.html#mountain-biking-section">Mountain Biking</a>
+                    <a href="aktivitetet.html#free-fall-section">Free Fall</a>
+                    <a href="aktivitetet.html#horse-riking-section">Horse Riding</a>
+                  </div>
+                </li>
+
+                <li>
+                  <a href="rezervoni.html" class="dropbtn"><b>Rezervoni</b></a>
+                </li>
+
+                <li class="dropdown">
+                  <a href="rrethnesh.html" class="dropbtn"><b>Rreth Nesh</b></a>
+                  <div class="dropdown-content">
+                    <a href="rrethnesh.html">Kompania jonë</a>
+                    <a href="vendndodhja.html">Vendndodhja</a>
+                    <a href="faq.html">FAQ</a>
+                    <a href="validation_css_Detyra2.html">Kontroll CSS-Validation</a>
+                </div>
+                </li>
+                <li class="dropdown">
+                  <div class="search-bar">
+                     <input type="search" id="searchInput" name="searchInput" placeholder="Search..." onkeydown="searchOnEnter(event)">
+                     <span class="material-symbols-outlined">search</span>
+                   </div>
+                </li>
+              </ul>
+            </nav>
+      </header>
+
+      <script>
+        // JavaScript function to handle search on Enter key press
+        function searchOnEnter(event) {
+          if (event.key === "Enter") {
+            // Perform your search action here
+            alert("Searching for: " + document.getElementById("searchInput").value);
+          }
+        }
+      </script>
+      <br><br>
+      <main>
+
+          <div class="background-image">
+              <img src="images\f6acfff1-67ee-4bd1-ae65-5f7a97c447e7-data.jpg" alt="Resort Image" style="width: 100%;">
+          </div>
+          <p style=" padding:20px 190px 10px 190px;" >Resorti Naye përbëhet nga një grup hotelesh dhe restorantesh të klasit të parë në lokacione mahnitëse, të zgjedhura me dorë nga hostë të përkushtuar. Bulmeti, perimet, frutat dhe një sërë produktesh të vecanta – përfshirë verën, sigurisht – merren të freskëta nga fermat tona për t'u sjellë direkt në tryezën tuaj. Kështu e përkufizojmë ne luksin. Ndryshe e quajmë luksi i ushqyer nga natyra.</p>
+          <h2 align="center">Naye Nature Noshery</h2>
+          <section>
+              <div class="image-container">
+                  <div class="image-box">
+                      <img src="images\as4i1751_detail.jpg" alt="Image 1">
+                      <div class="overlay" style="background: rgba(0, 0, 0, 0.5);">
+                          <div class="icon" style="position: absolute; bottom:12px;" ><span class="material-symbols-outlined">skillet_cooktop</span></div>
+                          <div class="text" style="position: absolute; bottom: 4px;">
+                            <h3>Staf i kualifikuar</h3>
+                          </div>
+                      </div>
+                  </div>
+
+                  <div class="image-box">
+                      <img src="images\dsc-4842_detail.jpg" alt="Image 2">
+                      <div class="overlay" style="background: rgba(0, 0, 0, 0.5);">
+                        <div class="icon" style="position: absolute; bottom:12px;" ><span class="material-symbols-outlined">checklist</span></div>
+                        <div class="text" style="position: absolute; bottom: 4px;">
+                          <h3>Detaje të mirëmenduara</h3>
+                        </div>
+                      </div>
+                  </div>
+
+                  <div class="image-box">
+                      <img src="images\kitchenparty_detail.png" alt="Image 3">
+                      <div class="overlay" style="background: rgba(0, 0, 0, 0.5);">
+                        <div class="icon" style="position: absolute; bottom:12px;" ><span class="material-symbols-outlined">brunch_dining</span></div>
+                        <div class="text" style="position: absolute; bottom: 4px;">
+                          <h3>Ushqime cilësore</h3>
+                        </div>
+                      </div>
+                  </div>
+
+                  <div class="image-box">
+                      <img src="images\konzert-schlatt-077_detail.jpg" alt="Image 4">
+                      <div class="overlay" style="background: rgba(0, 0, 0, 0.5);">
+                        <div class="icon" style="position: absolute; bottom:12px;" ><span class="material-symbols-outlined">mic_external_on</span></div>
+                        <div class="text" style="position: absolute; bottom: 4px;">
+                          <h3>Netë live</h3>
+                        </div>
+                  </div>
+              </div>
+            </section>
+            <p style=" padding:20px 190px 10px 190px;"> I vendosur në tarracën e Resort Naye, 3000 metra mbi nivelin e detit, restoranti "Naye Nature Noshery" ka 170 vende brenda dhe 90 vende jashtë. Menuja është e shumëllojshme, si për fëmijë dhe për të rritur. Ofrohen të gjitha vaktet nga mëngjesi, brunch, dreka e darka. Duke marrë parasysh kapacitetin tonë për të mirëpritur një numër të madh turistësh, ne ofrojmë evente si fejesa, dasma, mbledhje stafi të një kompanie etj. </p>
+          <br>
+          <section>
+            <h2 align="center">CloudNine Retreat</h2>
+            <img src="images\23IHH-Alps-03-superJumbo1.jpg" style=" height:500px;  padding:10px 40px 10px 230px;" align="center" alt="Resort Image" >
+            <p style=" padding:20px 190px 10px 190px;"> Hoteli familjar nën menaxhimin e stafit gjermanisht dhe frëngjisht folës, ka 104 dhoma të mëdha me ballkon, pamje madhështore të maleve përreth dhe WIFI falas. Mund të shfrytëzoni dhe pishinat, ambientet e fitnesit dhe saunat për t'u çlodhur. Qëllimi ynë është cilësia e jetës. Nëse jeni në një udhëtim pune ose po kaloni pushimet tuaja në një nga shtëpitë tona, nëse dëshironi të shijoni një darkë të këndshme në restorantet tona të shkëlqyera ose thjesht të pushoni, nëse dëshironi të kaloni një ditë në natyrë në fermat tona ose të shijoni disa nga produkte unike, kontaktoni me stafin tonë që të merrni pikërisht atë shërbim që ju nevojitet.
+            Ky është përkufizimi ynë i luksit. </p>
+          </section>
+
+          <form>
+              <label for="checkInDate">Data Check-in:</label>
+              <input type="date" id="checkInDate" name="checkInDate" required>
+
+              <label for="checkOutDate">Data Check-out:</label>
+              <input type="date" id="checkOutDate" name="checkOutDate" required>
+
+              <label for="numRooms">Numri i dhomave:</label>
+              <input type="number" id="numRooms" name="numRooms" min="1" required>
+
+              <div id="roomDetails"></div>
+
+              <button type="submit">Dërgo Rezervimin</button>
+          </form>
+
+          <script>
+              document.addEventListener('DOMContentLoaded', function () {
+                const numRoomsInput = document.getElementById('numRooms');
+                const roomDetailsContainer = document.getElementById('roomDetails');
+                const reservationForm = document.querySelector('form');
+
+                reservationForm.addEventListener('submit', function (event) {
+                  event.preventDefault(); // Prevent the form from submitting normally
+
+                  // Your existing form submission logic here
+
+                  // Show the thank you message in a pop-up
+                  const thankYouMessage = "Ju falenderojmë për rezervimin. Jemi të lumtur që na zgjodhët ne!";
+                  alert(thankYouMessage);
+
+                  // Reload the page after the user clicks OK on the pop-up
+                  window.location.reload();
+                });
+
+                numRoomsInput.addEventListener('input', function () {
+                  const numRooms = numRoomsInput.value;
+
+                  // Clear existing room details
+                  roomDetailsContainer.innerHTML = '';
+
+                  // Generate room details for each room
+                  for (let i = 1; i <= numRooms; i++) {
+                    const roomContainer = document.createElement('div');
+                    roomContainer.className = 'room-container';
+
+                    // Room number
+                    const roomNumberLabel = document.createElement('label');
+                    roomNumberLabel.textContent = `Dhoma ${i}`;
+                    roomContainer.appendChild(roomNumberLabel);
+
+                    // Room type
+                    const roomTypeLabel = document.createElement('label');
+                    roomTypeLabel.textContent = 'Lloji dhomës:';
+                    roomContainer.appendChild(roomTypeLabel);
+
+                    const roomTypes = ['normal', 'executive', 'suite', 'presidential', 'royal'];
+
+                    const roomTypeOptionsContainer = document.createElement('div');
+                    roomTypeOptionsContainer.className = 'room-type-options';
+
+                    for (const type of roomTypes) {
+                      const radioInput = document.createElement('input');
+                      radioInput.type = 'radio';
+                      radioInput.name = `roomType${i}`;
+                      radioInput.value = type;
+                      radioInput.required = true;
+
+                      const label = document.createElement('label');
+                      label.textContent = type.charAt(0).toUpperCase() + type.slice(1);
+
+                      const radioContainer = document.createElement('div');
+                      radioContainer.appendChild(radioInput);
+                      radioContainer.appendChild(label);
+
+                      roomTypeOptionsContainer.appendChild(radioContainer);
+                    }
+
+                    roomContainer.appendChild(roomTypeOptionsContainer);
+
+                    // Number of adults
+                    const adultsLabel = document.createElement('label');
+                    adultsLabel.textContent = 'Numri i të rriturve:';
+                    const adultsInput = document.createElement('input');
+                    adultsInput.type = 'number';
+                    adultsInput.name = `adults${i}`;
+                    adultsInput.min = '1';
+                    adultsInput.required = true;
+                    roomContainer.appendChild(adultsLabel);
+                    roomContainer.appendChild(adultsInput);
+
+                    // Number of children
+                    const childrenLabel = document.createElement('label');
+                    childrenLabel.textContent = 'Numri i Fëmijëve:';
+                    const childrenInput = document.createElement('input');
+                    childrenInput.type = 'number';
+                    childrenInput.name = `children${i}`;
+                    childrenInput.min = '0';
+                    roomContainer.appendChild(childrenLabel);
+                    roomContainer.appendChild(childrenInput);
+
+                    // Meal options
+                    const mealLabel = document.createElement('label');
+                    mealLabel.textContent = 'Përfshi vaktet:';
+                    const mealOptionsContainer = document.createElement('div');
+                    mealOptionsContainer.className = 'meal-options';
+                    const breakfastCheckbox = document.createElement('input');
+                    breakfastCheckbox.type = 'checkbox';
+                    breakfastCheckbox.name = `breakfast${i}`;
+                    breakfastCheckbox.value = 'breakfast';
+                    const lunchCheckbox = document.createElement('input');
+                    lunchCheckbox.type = 'checkbox';
+                    lunchCheckbox.name = `lunch${i}`;
+                    lunchCheckbox.value = 'lunch';
+                    const dinnerCheckbox = document.createElement('input');
+                    dinnerCheckbox.type = 'checkbox';
+                    dinnerCheckbox.name = `dinner${i}`;
+                    dinnerCheckbox.value = 'dinner';
+                    mealOptionsContainer.appendChild(mealLabel);
+
+                    mealOptionsContainer.appendChild(document.createTextNode('Mëngjes'));
+                    mealOptionsContainer.appendChild(lunchCheckbox);
+                    mealOptionsContainer.appendChild(document.createTextNode('Drekë'));
+                    mealOptionsContainer.appendChild(dinnerCheckbox);
+                    mealOptionsContainer.appendChild(document.createTextNode('Darkë'));
+                    mealOptionsContainer.appendChild(breakfastCheckbox);
+                    roomContainer.appendChild(mealOptionsContainer);
+
+                    roomDetailsContainer.appendChild(roomContainer);
+                  }
+                });
+              });
+            </script>
+
+            <br><Br><Br>
+      </main>
+      <footer>
+        <div class="footer-content">
+            <img src="images\footer.png" class="footer-image">
+            <div class="footer-list">
+                  <ul>
+                      <li><a href="vendndodhja.html">GETTING HERE</a></li>
+                      <li><a href="home.html">TICKETS & OPENING TIMES</a></li>
+                      <li><a href="aktivitetet.html">WHAT TO DO AT DAJTI MOUNTAIN</a></li>
+                      <li><a href="faq.html">FAQ’S</a></li>
+                  </ul>
+                  <ul>
+                      <li><a href="rezervoni.html">RESERVATION</a></li>
+                      <li><a href="rrethnesh.html">ABOUT US</a></li>
+                      <li><a href="rrethnesh.html">BLOG</a></li>
+
+                  </ul>
+                  <ul>
+                      <li>LINKEDIN</li>
+                      <li>FACEBOOK</li>
+                      <li>INSTAGRAM</li>
+                      <li>YOUTUBE</li>
+                  </ul>
+                  <ul>
+
+                      <li><a href="sherbimet.html">TRIPADVISOR</a></li>
+                      <li><a href="rrethnesh.html">INFO</a></li>
+                      <li>MARKETING</li>
+                  </ul>
+                  <ul>
+                      <li>(+355) 67 40 11 035</li>
+                      <li>WHATSAPP</li>
+                      <li>MESSENGER</li>
+                  </ul>
+              </div>
+
+          </div>
+          <p align="center">&copy; 2023 Resort Naye. All rights reserved.</p>
+      </footer>
+  </body>
+</html>
